@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // Replace 'foundation-phase-tracker' with your actual GitHub repo name
 export default defineConfig({
   plugins: [react()],
-  base: '/https://github.com/nitinitinitinitin/foundation-phase-tracker.git/',
+  base: '/foundation-phase-tracker.git/',
 })
