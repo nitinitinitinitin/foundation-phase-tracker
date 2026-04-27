@@ -1,5 +1,10 @@
 node_modules
 dist
 .DS_Store
+
+// Ignore environment variables file
 .env
-.env.local
+
+// igore zip files
+
+*.zip
