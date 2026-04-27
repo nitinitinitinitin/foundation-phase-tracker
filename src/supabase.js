@@ -1,15 +1,7 @@
 import { createClient } from "@supabase/supabase-js";
 
-const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
-const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY;
-
-if (!SUPABASE_URL || !SUPABASE_ANON_KEY) {
-  throw new Error(
-    "Missing Supabase env vars. Add VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY to your Vercel project settings (or .env locally)."
-  );
-}
+const SUPABASE_URL = 'https://walhpjrdohyawpyoexsp.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndhbGhwanJkb2h5YXdweW9leHNwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzcyNTg0MDIsImV4cCI6MjA5MjgzNDQwMn0.4GiWOloyuZpTE553dW0VIk557YUBXdilmrYUB_Z6b8c';
 
 export const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
-
-// Row ID used for the single progress document
 export const PROGRESS_ROW_ID = "nitin-foundation-tracker";
