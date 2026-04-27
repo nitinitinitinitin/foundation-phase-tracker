@@ -12,4 +12,4 @@ if (!SUPABASE_URL || !SUPABASE_ANON_KEY) {
 export const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 // Row ID used for the single progress document
-export const PROGRESS_ROW_ID = "nitin-foundation-tracker";
+export const PROGRESS_ROW_ID = "foundation-tracker";
